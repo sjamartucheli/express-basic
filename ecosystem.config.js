@@ -26,7 +26,7 @@ module.exports = {
       ref  : "origin/master",
       repo : "git@github.com:sjamartucheli/express-basic.git",
       path : "/var/www/express-basic",
-      "post-deploy" : "npm install && pm2 startOrRestart /var/www/express-basic/current/ecosystem.config.json"
+      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.config.js"
     }
   }
 }
